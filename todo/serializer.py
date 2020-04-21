@@ -1,5 +1,5 @@
-from rest_framework import serializers
 from drf_writable_nested.serializers import WritableNestedModelSerializer
+from rest_framework import serializers
 
 from todo.models import Tag, Todo
 

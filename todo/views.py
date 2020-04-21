@@ -1,8 +1,9 @@
 from rest_framework import viewsets, status
-from .serializer import TodoDetailSerializer, TodoListSerializer, TagSerializer
-from .models import Tag, Todo
 from rest_framework.decorators import action
 from rest_framework.response import Response
+
+from .models import Tag, Todo
+from .serializer import TodoDetailSerializer, TodoListSerializer, TagSerializer
 
 
 class TodoViewSet(viewsets.ModelViewSet):
